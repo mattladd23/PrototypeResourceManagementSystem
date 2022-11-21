@@ -23,8 +23,7 @@
         <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="20">
             <ComboBox x:Name="jobSelector" FontSize="18" SelectedIndex="0" Margin="0,0,0,20">
                 <ListBoxItem Content="Driver"/>
-                <ListBoxItem Content="Decorator"/>
-                <ListBoxItem Content="Electrician"/>
+                <ListBoxItem Content="Decorator"/>                
             </ComboBox>
             <Button Content="Assign job" FontSize="18px" Click="AssignJob_Click" />
         </StackPanel>

@@ -12,12 +12,12 @@ namespace PrototypeEmployeeManagementSystem
         public const float CONTAINERS_COLLECTED_PER_SHIFT = 5f;
 
         // To amend budget
-        public override float DayRate { get { return 300f; } }
+        public override float DayRate { get { return 150f; } }
         
         // Constructor passes through "Driver" as read-only job property
         public Driver() : base("Driver") { }
 
-        // Invokes container collection
+        // Invoke container collection
         protected override void DoJob()
         {
             BalanceSheet.CollectContainer(CONTAINERS_COLLECTED_PER_SHIFT);

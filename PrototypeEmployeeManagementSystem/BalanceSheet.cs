@@ -22,7 +22,7 @@ namespace PrototypeEmployeeManagementSystem
             if (quantity > 0f) usedContainers += quantity;
         }
 
-        // Container refurbishment method usually invoked by decorators and electricians
+        // Container refurbishment method usually invoked by decorators
         public static void RefurbishContainer(float quantity)
         {
             // Assign quantity argument to variable
