@@ -20,9 +20,26 @@ namespace PrototypeEmployeeManagementSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Instantiate manager class
+        private Manager manager = new Manager();
         public MainWindow()
         {
             InitializeComponent();
+            statusReport.Text = manager.StatusReport;
+        }
+
+        // Event handler for an employee completing a shift
+        private void WorkShift_Click(object sender, RoutedEventArgs e)
+        {
+            manager.WorkNextShift();
+            statusReport.Text = manager.StatusReport;
+        }
+
+        // Event handler for an employee being assinged a job
+        private void AssignJob_Click(object sender, RoutedEventArgs e)
+        {
+            manager.AssignEmployee(jobSelector.Text);
+            statusReport.Text = manager.StatusReport;
         }
     }
 }
