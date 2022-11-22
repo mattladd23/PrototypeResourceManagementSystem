@@ -11,7 +11,7 @@ namespace PrototypeEmployeeManagementSystem
         // Declare variables to determine financial outlook
         public const float RISK_CONSIDERATION = .85f;
         public const float WARNING_BALANCE = 1000f;
-        private static float balance = 10000f;
+        public static float balance = 10000f;
         private static float refurbishedContainers = 50f;
         private static float usedContainers = 100f;
 
